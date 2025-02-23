@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 10px;
+        }
+
+        body {
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden auto;
+        }
+
+        .container {
+            height: 70rem;
+            width: 100%;
+            border: 1px solid black;
+            display: flex;
+            gap: 4rem;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            height: 45rem;
+            width: 45rem;
+            border: 1px solid red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1 {
+            font-size: 5rem;
+        }
+        /* Media Query For 900px Tab Size */
+        @media only screen and (max-width:90rem){
+            .box {
+                height: 30rem;
+                width: 30rem;
+                border: 2px solid red;
+                background-color: rgb(111, 178, 184);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                /* font-size: 4rem; */
+            }
+            h1{
+                font-size: 3rem;
+            }
+            html{
+                font-size: 8px;
+            }
+        }
+
+        /* Media Query For 500px Tab Size */
+        @media only screen and (max-width:50rem){
+            .box {
+                height: 20rem;
+                width: 20rem;
+                border: 2px solid rgb(0, 0, 0);
+                background-color: rgb(213, 44, 44);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+            }
+            h1{
+                font-size: 2rem;
+            }
+            html{
+                font-size: 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Box-1</h1>
+        </div>
+        <div class="box">
+            <h1>Box-2</h1>
+        </div>
+        <div class="box">
+            <h1>Box-3</h1>
+        </div>
+    </div>
+</body>
+
+</html>

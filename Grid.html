@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Assignment</title>
+    <Style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 10px;
+        }
+
+        body {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            background-image: url(./background.avif);
+            background-size: cover;
+            background-repeat: no-repeat;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            height: 70rem;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 35rem 35rem 35rem;
+            grid-template-rows: 35rem 25rem 30rem;
+            /* border: 2px solid black; */
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;    
+        }
+
+        .box {
+            border: 2px solid red;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+            padding: 2rem;
+            border-radius: 2rem;
+            /* justify-content: center; */
+            /* align-items: center; */
+            /* text-align: center; */
+        }
+
+        .box h1 {
+            font-size: 2rem;
+        }
+
+        .img-sec-1 {
+            height: 10rem;
+            width: 100%;
+            background-repeat: no-repeat;
+            display: flex;
+            /* flex-direction: column; */
+            justify-content: flex-start;
+            align-items: center;
+            padding: 1rem;
+            gap: 2rem;
+        }
+
+        .img-sec-1 img {
+            display: flex;
+            height: 7rem;
+            width: 8rem;
+        }
+
+        .text {
+            height: 10rem;
+            width: 50%;
+            /* border: 2px solid yellow; */
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: left;
+            gap: 1rem;
+            padding: 1rem;
+        }
+
+        .main-text {
+            display: flex;
+            font-size: 1.5rem;
+            justify-content: space-between;
+            /* gap: 2rem; */
+        }
+
+        .main-text a{
+            text-decoration: none;
+        }
+        p{
+            font-size: 1.3rem;
+        }
+
+        .img-sec-2 {
+            height: 10rem;
+            width: 100%;
+            background-repeat: no-repeat;
+            display: flex;
+            /* flex-direction: column; */
+            justify-content: flex-start;
+            align-items: center;
+            padding: 1rem;
+            gap: 2rem;
+        }
+
+        .img-sec-2 img {
+            display: flex;
+            height: 7rem;
+            width: 8rem;
+        }
+
+        .img-sec-3 {
+            height: 10rem;
+            width: 100%;
+            background-repeat: no-repeat;
+            display: flex;
+            /* flex-direction: column; */
+            justify-content: flex-start;
+            align-items: center;
+            padding: 1rem;
+            gap: 2rem;
+        }
+
+        .img-sec-3 img {
+            display: flex;
+            height: 7rem;
+            width: 8rem;
+        }
+
+        .img-sec-4 {
+            height: 10rem;
+            width: 100%;
+            background-repeat: no-repeat;
+            display: flex;
+            /* flex-direction: column; */
+            justify-content: flex-start;
+            align-items: center;
+            padding: 1rem;
+            gap: 2rem;
+        }
+
+        .img-sec-4 img {
+            display: flex;
+            height: 7rem;
+            width: 8rem;
+        }
+
+        .img-sec-5 {
+            height: 10rem;
+            width: 100%;
+            background-repeat: no-repeat;
+            display: flex;
+            /* flex-direction: column; */
+            justify-content: flex-start;
+            align-items: center;
+            padding: 1rem;
+            gap: 2rem;
+        }
+
+        .img-sec-5 img {
+            display: flex;
+            height: 7rem;
+            width: 8rem;
+        }
+
+        .img-sec-6 {
+            height: 10rem;
+            width: 100%;
+            background-repeat: no-repeat;
+            display: flex;
+            /* flex-direction: column; */
+            justify-content: flex-start;
+            align-items: center;
+            padding: 1rem;
+            gap: 2rem;
+        }
+
+        .img-sec-6 img {
+            display: flex;
+            height: 7rem;
+            width: 8rem;
+        }
+    </Style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- <div class="box-sec"> -->
+        <div class="box" id="box-1">
+            <div class="img-sec-1">
+                <img src="./1.png" alt="">
+                <div class="text">
+                    <h1>Strip</h1>
+                    <p>Payment Services</p>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, corrupti.</h2>
+            <div class="main-text">
+                <p>Installed 172 times</p>
+                <a href="#">View ></a>
+            </div>
+        </div>
+        <div class="box" id="box-2">
+            <div class="img-sec-2">
+                <img src="./2.png" alt="">
+                <div class="text">
+                    <h1>Mailchimp</h1>
+                    <p>Project Management</p>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, corrupti.</h2>
+            <div class="main-text">
+                <p>Installed 1234 times</p>
+                <a href="#">View ></a>
+            </div>
+        </div>
+
+        <div class="box" id="box-3">
+            <div class="img-sec-3">
+                <img src="./3.png" alt="">
+                <div class="text">
+                    <h1>Dropbox</h1>
+                    <p>File Management</p>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, corrupti.</h2>
+            <div class="main-text">
+                <p>Installed 123 times</p>
+                <a href="#">View ></a>
+            </div>
+        </div>
+
+        <div class="box" id="box-4">
+            <div class="img-sec-4">
+                <img src="./4.png" alt="">
+                <div class="text">
+                    <h1>Shopify</h1>
+                    <p>Ecommerce</p>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, corrupti.</h2>
+            <div class="main-text">
+                <p>Installed 1342 times</p>
+                <a href="#">View ></a>
+            </div>
+        </div>
+
+        <div class="box " id="box-5">
+            <div class="img-sec-5">
+                <img src="./5.png" alt="">
+                <div class="text">
+                    <h1>Atlassian</h1>
+                    <p>Project Management</p>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, corrupti.</h2>
+            <div class="main-text">
+                <p>Installed 345 times</p>
+                <a href="#">View ></a>
+            </div>
+
+        </div>
+        <div class="box" id="box-6">
+            <div class="img-sec-6">
+                <img src="./6.png" alt="">
+                <div class="text">
+                    <h1>Salesforce</h1>
+                    <p>Projrct Management</p>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, corrupti.</h2>
+            <div class="main-text">
+                <p>Installed 345 times</p>
+                <a href="#">View ></a>
+            </div>
+
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
