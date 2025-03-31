@@ -5,18 +5,20 @@ public class ProductModel {
 	private String name;
 	private int price;
 	private int stock;
+	private int qty;
 	private String comName;
 	
 	public ProductModel() {
 		
 	}
-	public ProductModel(String name,int id,int stock,int price,String compName)
+	public ProductModel(String name,int id,int stock,int price,String compName,int qty)
 	{
 		this.name=name;
 		this.id=id;
 		this.stock=stock;
 		this.price=price;
 		this.comName=compName;
+		this.qty=qty;
 	}
 	
 	public int getId() {
@@ -48,5 +50,11 @@ public class ProductModel {
 	}
 	public void setComName(String comName) {
 		this.comName = comName;
+	}
+	public int getQty() {
+		return qty;
+	}
+	public void setQty(int qty) {
+		this.qty = qty;
 	}
 }

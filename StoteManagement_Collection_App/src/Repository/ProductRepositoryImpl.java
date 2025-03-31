@@ -17,5 +17,16 @@ public class ProductRepositoryImpl implements ProductRepository
 		// TODO Auto-generated method stub
 		return prodList;
 	}
+	@Override
+	public ProductModel searchProduct(String name) {
+		ProductModel pmodel = null;
+		for(Object obj:prodList) {
+			if(pmodel.getName().equals(name)) {
+				return pmodel;
+			}
+		}
+		// TODO Auto-generated method stub
+		return null;
+	}
 
 }

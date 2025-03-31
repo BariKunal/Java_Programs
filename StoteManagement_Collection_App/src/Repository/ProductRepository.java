@@ -5,4 +5,5 @@ import java.util.*;
 public interface ProductRepository {
 	public boolean isAddNewProduct(ProductModel model);
 	public List getAllProducts();
+	public ProductModel searchProduct(String name);
 }

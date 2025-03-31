@@ -8,5 +8,6 @@ import Model.ProductModel;
 public interface ProductService {
 	public boolean isAddNewProduct(ProductModel model);
 
-	List getAllProducts();
+	public List getAllProducts();
+	public ProductModel searchProduct(String name);
 }
