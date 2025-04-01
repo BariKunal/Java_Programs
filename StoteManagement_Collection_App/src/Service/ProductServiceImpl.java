@@ -29,14 +29,14 @@ public class ProductServiceImpl implements ProductService
 		
 		return prodRepo.searchProduct(name);
 	}
-	public boolean deleteProduct(String name) {
+	public ProductModel deleteProduct(String name) {
 		// TODO Auto-generated method stub
-		return false;
+		return prodRepo.deleteProduct(name);
 	}
-	public String getProductCount() {
+	public int getProductCount() {
 		// TODO Auto-generated method stub
 		
-		return null;
+		return prodRepo.getProductCount();
 	}
 
 }

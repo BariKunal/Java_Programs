@@ -72,8 +72,8 @@ public class ClientApplication {
             case 4:
                 System.out.println("enter product name to search");
                 name = sc.next();
-                b = prodService.deleteProduct(name);
-                if (b)
+               pm = prodService.deleteProduct(name);
+                if (pm!=null)
                     System.out.println("product deleted sucsessfully");
                 else
                     System.out.println("product not deletet");
