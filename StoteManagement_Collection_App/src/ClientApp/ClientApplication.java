@@ -82,53 +82,14 @@ public class ClientApplication {
                 System.out.println("Total numbar of products present in Shop " + prodService.getProductCount());
                 break;
             case 6:
-               /* ArrayList validcust = csc.getValidCust();
-                Iterator ivc = validcust.iterator();	
-                System.out.println("=====================================================");
-                while (ivc.hasNext()) {
-                    Object obj = ivc.next();
-                    ValidCustModel v = (ValidCustModel) obj;
-//(int vcustId, String vcustname, String vOrderdProduct, int vOrderQuantity, int vvisitcount)
-                    System.out.println("customer id        \t" + v.getVcustId());
-                    System.out.println("customer name      \t" + v.getVcustname());
-                    System.out.println("orderd product     \t" + v.getvOrderdProduct());
-                    System.out.println("product quantity   \t" + v.getvOrderQuantity());
-                    System.out.println("visit count to shop\t" + v.getVvisitcount());
-                    System.out.println("=======================================================");
-                }
+               
                 break;
             case 7:
-                System.out.println("enter customer name to delete record");
-                String c7name = sc.next();
-                b = csc.deleteValidCust(c7name);
-                if (b)
-                    System.out.println("\ncustomer deleted sucsessfully\n");
-                else
-                    System.out.println("\ncustomer not deleted \n");
-
+               
+                
                 break;
             case 8:
-                System.out.println("enter customer name to find record");
-                String c8name = sc.next();
-                validcust = csc.getValidCust();
-                Iterator ivc8 = validcust.iterator();
-                boolean flag8 = true;
-                System.out.println("=====================================================");
-                while (ivc8.hasNext()) {
-                    Object obj = ivc8.next();
-                    ValidCustModel v = (ValidCustModel) obj;
-                    if (v.getVcustname().equals(c8name)) {
-                        System.out.println("customer id        \t" + v.getVcustId());
-                        System.out.println("customer name      \t" + v.getVcustname());
-                        System.out.println("orderd product     \t" + v.getvOrderdProduct());
-                        System.out.println("product quantity   \t" + v.getvOrderQuantity());
-                        System.out.println("visit count to shop\t" + v.getVvisitcount());
-                        System.out.println("=======================================================");
-                        flag8 = false;
-                    }
-                }
-                if (flag8)
-                    System.out.println("customer not visited shop");
+               
                 break;
             case 9:
 
@@ -141,7 +102,7 @@ public class ClientApplication {
                 break;
             case 12:
                
-                break;*/
+                break;
             case 13:
                 System.exit(0);
                 break;
