@@ -8,6 +8,7 @@ import Service.ProductServiceImpl;
 public class ClientApplication {
 	static ProductServiceImpl prodService = new ProductServiceImpl();
 		//ProductServiceImpl pmi = new ProductServiceImpl();
+	
 	public static void main(String[] args) {
 		
 		do {
@@ -107,7 +108,7 @@ public class ClientApplication {
                 System.exit(0);
                 break;
 				default:
-					System.out.println("Invalid Choice...");
+					System.out.println("Invalid Choice!...");
 			}
 		}while(true);
 		
