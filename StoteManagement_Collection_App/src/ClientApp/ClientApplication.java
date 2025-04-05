@@ -11,8 +11,10 @@ public class ClientApplication {
 	
 	public static void main(String[] args) {
 		
+		Scanner sc = new Scanner(System.in);
+		
 		do {
-			Scanner sc = new Scanner(System.in);
+			
 			System.out.println("1:Add Products in collection ");
             System.out.println("2:View All products in collection");
             System.out.println("3:Search Product from collection ");
