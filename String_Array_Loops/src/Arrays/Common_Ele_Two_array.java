@@ -19,7 +19,13 @@ public class Common_Ele_Two_array {
 			b[i] = sc.nextInt();
 		}
 		
+		System.out.println("Common Elements In Two Arrays :");
 		for(int i=0; i<size; i++) {
+			for(int j=0; j<size; j++) {
+				if(a[i]==b[j]) {
+					System.out.print(+a[i]+" ");
+				}
+			}
 			
 		}
 	}
