@@ -10,14 +10,20 @@ public class Duplicate_Ele_Array {
 		System.out.println("Enter The Array Size :");
 		int size = sc.nextInt();
 		int a[] = new int[size];
-		boolean flag=true;
+//		boolean flag=true;
 		
 		System.out.print("Enter The Array Elements :");
 		for(int i=0; i<size; i++) {
 			a[i] = sc.nextInt();
 		}
 		System.out.println("Duplicates Elements In Array :");
-		
+		for(int i=0; i<size; i++) {
+			for(int j=i+1; j<size; j++) {
+				if(a[i]==a[j]) {
+					System.out.print(a[i]+" ");		
+					}
+			}
+		}
 	}
 
 }
