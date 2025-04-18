@@ -9,17 +9,17 @@ public class Pattern1 {
 			for(int j=1; j<=7; j++) {
 				if(j>4-i && j<4+i) {
 					System.out.print(num);
-					if(j<num) {
+					if(j<=3) {
 						num++;
 					}	
 					else {
 						
-						num-=1;
+						num--;
 					}
 				}
 				else {
 					System.out.print(" ");
-//					num--;
+
 				}
 			}
 			System.out.println();
