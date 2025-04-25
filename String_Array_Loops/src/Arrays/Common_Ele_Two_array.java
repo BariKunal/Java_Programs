@@ -13,7 +13,6 @@ public class Common_Ele_Two_array {
 		for(int i=0; i<size; i++) {
 			a[i] = sc.nextInt();
 		}
-		
 		System.out.println("Enter the 2nd Array Elements :");
 		for(int i=0; i<size; i++) {
 			b[i] = sc.nextInt();
