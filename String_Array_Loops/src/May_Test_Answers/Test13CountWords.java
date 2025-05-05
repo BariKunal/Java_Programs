@@ -25,6 +25,6 @@ public class Test13CountWords
 		}
 		if(count>0)
 		System.out.println("Count Is 1st: "+count);
-		else System.out.println("Not World Present...");
+		else System.out.println("Not Word Present in string...");
 	}
 }
