@@ -16,28 +16,28 @@ public class Test10DuplicateEle {
 
 		
 		System.out.println("Duplicate Elements In Array : ");
-		for(int i=0; i<a.length-1; i++) {
-			for(int j=i+1; j<a.length; j++) {
-				if(a[i]==a[j]) {
-					System.out.print(a[i]+" ");
-				}
-			}
-		}
-//		for (int i = 0; i < size; i++) {
-//			if (a[i] == -1) {
-//				continue;
-//			}
-//			boolean flag = false;
-//			for (int j = i + 1; j < size; j++) {
-//				if (a[i] == a[j]) {
-//					a[j] = -1;
-//					flag = true;
+//		for(int i=0; i<a.length-1; i++) {
+//			for(int j=i+1; j<a.length; j++) {
+//				if(a[i]==a[j]) {
+//					System.out.print(a[i]+" ");
 //				}
 //			}
-//			if (flag) {
-//				System.out.print(a[i] + " ");
-//				a[i] = -1;
-//			}
 //		}
+		for (int i = 0; i < size; i++) {
+			if (a[i] == -1) {
+				continue;
+			}
+			boolean flag = false;
+			for (int j = i + 1; j < size; j++) {
+				if (a[i] == a[j]) {
+					a[j] = -1;
+					flag = true;
+				}
+			}
+			if (flag) {
+				System.out.print(a[i] + " ");
+				a[i] = -1;
+			}
+		}
 	}
 }
